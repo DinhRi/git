@@ -8,6 +8,10 @@ int tong(int a, int b)
 {
 	return a+b;
 }
+int tich(int a, int b)
+{
+	return a*b;
+}
 
 int main()
 {
@@ -23,6 +27,8 @@ int main()
 		ketqua=hieu(a,b);
 	else if(phepToan=="+")
 		ketqua=tong(a,b);
+	else if(phepToan=="*")
+		ketqua=tich(a,b);
 	cout<<" ket qua: "+ketqua;
 	system("pause");
 	return 0;
