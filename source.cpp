@@ -12,6 +12,12 @@ int tich(int a, int b)
 {
 	return a*b;
 }
+void ChanLe(int a)
+{
+	if(a%2==0)
+	cout<<"so "+a+" la so chan";
+	else cout<<"so "+a+" la so le";
+}
 
 int main()
 {
@@ -30,6 +36,9 @@ int main()
 	else if(phepToan=="*")
 		ketqua=tich(a,b);
 	cout<<" ket qua: "+ketqua;
+	cout<<"nhap so bat ky: ";
+	cin>> a;
+	ChanLe(a);
 	system("pause");
 	return 0;
 }
